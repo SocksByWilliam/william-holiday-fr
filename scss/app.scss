@@ -1,0 +1,284 @@
+@import "settings";
+@import "foundation";
+@import "architecture";
+body {
+	width: 100%;
+	height: 100%;
+}
+.display-table {
+	display: table;
+}
+.display-vertical {
+	display: table-cell;
+	vertical-align: middle;
+}
+h1 {
+	color: $white;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	margin-bottom: 15px;
+	@media #{$small-only} {
+		font-size: 1.5rem;
+	}
+	@media #{$medium-only} {
+		font-size: 2rem;
+	}
+	@media #{$large-up} {
+		font-size: 2.5rem;
+	}
+}
+h2{
+	color: $white;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	@media #{$small-only} {
+		font-size: 1rem;
+	}
+	@media #{$medium-only} {
+		font-size: 1.5rem;
+	}
+	@media #{$large-up} {
+		font-size: 2rem;
+	}
+}
+.button-cta{
+	border-style: solid;
+	border-width: 0px;
+	cursor: pointer;
+	font-family: "Open Sans", sans-serif;
+	font-weight: normal;
+	line-height: normal;
+	margin: 0 0 1.25rem;
+	position: relative;
+	text-decoration: none;
+	text-align: center;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	display: inline-block;
+	padding-top: 1rem;
+	padding-right: 2rem;
+	padding-bottom: 1.0625rem;
+	padding-left: 2rem;
+	font-size: 1rem;
+	background-color: #de1821;
+	border-color: #de1821;
+	transition: background-color 300ms ease-out;
+	margin-top: 40px;
+	color: $white;
+	&:hover{
+		background: #960d14;
+		color: $white;
+	}
+}
+/* -----------------------------------------
+  hero
+----------------------------------------- */
+#hero {
+	background: url("../img/hero-bg.jpg") top right no-repeat;
+	background-size: cover;
+	width: 100%;
+	padding: 80px 0;
+	@media #{$small-only} {
+		min-height: 500px;
+	}
+	@media #{$medium-only} {
+		min-height: 100%;
+	}
+	@media #{$large-up} {
+		min-height: 100%;
+	}
+}
+
+/* -----------------------------------------
+  follow-your-heart
+----------------------------------------- */
+#follow-your-heart{
+	background: url("../img/follow-your-heart-bg.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	width: 100%;
+	padding: 80px 0;
+	@media #{$small-only} {
+		min-height: 500px;
+	}
+	@media #{$medium-only} {
+		min-height: 100%;
+	}
+	@media #{$large-up} {
+		min-height: 100%;
+	}
+}
+
+/* -----------------------------------------
+  in-the-maze
+----------------------------------------- */
+#in-the-maze {
+	background: url("../img/in-the-maze-bg.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	width: 100%;
+	padding: 80px 0;
+	@media #{$small-only} {
+		min-height: 500px;
+	}
+	@media #{$medium-only} {
+		min-height: 100%;
+	}
+	@media #{$large-up} {
+		min-height: 100%;
+	}
+}
+/* -----------------------------------------
+  paradise
+----------------------------------------- */
+#paradise {
+	background: url("../img/paradise-bg.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	width: 100%;
+	padding: 80px 0;
+	@media #{$small-only} {
+		min-height: 500px;
+	}
+	@media #{$medium-only} {
+		min-height: 100%;
+	}
+	@media #{$large-up} {
+		min-height: 100%;
+	}
+}
+/* -----------------------------------------
+  deuce-of-spades
+----------------------------------------- */
+#deuce-of-spades {
+	background: url("../img/deuce-of-spades-bg.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	width: 100%;
+	padding: 80px 0;
+	@media #{$small-only} {
+		min-height: 500px;
+	}
+	@media #{$medium-only} {
+		min-height: 100%;
+	}
+	@media #{$large-up} {
+		min-height: 100%;
+	}
+}
+/* -----------------------------------------
+  le-tour-de-france
+----------------------------------------- */
+#le-tour-de-france {
+	background: url("../img/le-tour-de-france-bg.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	width: 100%;
+	padding: 80px 0;
+	@media #{$small-only} {
+		min-height: 500px;
+	}
+	@media #{$medium-only} {
+		min-height: 100%;
+	}
+	@media #{$large-up} {
+		min-height: 100%;
+	}
+}
+/* -----------------------------------------
+  happy-birthday
+----------------------------------------- */
+#happy-birthday {
+	background: url("../img/happy-birthday-bg.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	width: 100%;
+	padding: 80px 0;
+	@media #{$small-only} {
+		min-height: 500px;
+	}
+	@media #{$medium-only} {
+		min-height: 100%;
+	}
+	@media #{$large-up} {
+		min-height: 100%;
+	}
+}
+/* -----------------------------------------
+  dna
+----------------------------------------- */
+#dna {
+	background: url("../img/dna-bg.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	width: 100%;
+	padding: 80px 0;
+	@media #{$small-only} {
+		min-height: 500px;
+	}
+	@media #{$medium-only} {
+		min-height: 100%;
+	}
+	@media #{$large-up} {
+		min-height: 100%;
+	}
+}
+/* -----------------------------------------
+  habitat-67
+----------------------------------------- */
+#habitat-67 {
+	background: url("../img/habitat-67-bg.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	width: 100%;
+	padding: 80px 0;
+	@media #{$small-only} {
+		min-height: 500px;
+	}
+	@media #{$medium-only} {
+		min-height: 100%;
+	}
+	@media #{$large-up} {
+		min-height: 100%;
+	}
+}
+/* -----------------------------------------
+  biosphere
+----------------------------------------- */
+#biosphere {
+	background: url("../img/biosphere-bg.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	width: 100%;
+	padding: 80px 0;
+	@media #{$small-only} {
+		min-height: 500px;
+	}
+	@media #{$medium-only} {
+		min-height: 100%;
+	}
+	@media #{$large-up} {
+		min-height: 100%;
+	}
+}
+/* -----------------------------------------
+  le-quotidien
+----------------------------------------- */
+#le-quotidien {
+	background: url("../img/le-quotidien-bg.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	width: 100%;
+	padding: 80px 0;
+	@media #{$small-only} {
+		min-height: 500px;
+	}
+	@media #{$medium-only} {
+		min-height: 100%;
+	}
+	@media #{$large-up} {
+		min-height: 100%;
+	}
+}

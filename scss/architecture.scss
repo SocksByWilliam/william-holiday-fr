@@ -1,0 +1,75 @@
+@import "compass";
+@import "compass/reset";
+
+/* -----------------------------------------
+  USEFUL MISC HTML CLASSES
+----------------------------------------- */
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.alignright {
+	display: block;
+	margin-left: auto;
+	margin-right: 0;
+}
+.fade {
+  opacity: 1;
+  @include transition-property(opacity);
+  @include transition-duration(0.25s);
+  @include transition-timing-function(ease-in-out);
+  &:hover  {
+	 opacity: 0.5;
+  }
+}
+   
+.text-center {text-align: center;}
+.text-right {text-align: right;}
+.text-left {text-align: left;}
+.text-indent {padding-left: 25px;}
+.pad-row-sm {padding-top: 20px;}
+.pad-row {padding-top: 40px;}
+.pad-row-big {padding-top: 65px;}
+.pad-row-extra {padding-top: 135px;}
+.pad-row-extra-big {padding-top: 160px;}
+.pad-row-extra-bigger {padding-top: 180px;}
+.pad-row-small {padding-top: 20px;}
+.pad-row-top-bot {padding: 20px 0 60px 0}
+.pad-row-top-bot-big {padding: 60px 0 60px 0}
+.full-row {max-width: 100% !important; margin: 0 !important;}
+.extend-row {max-width: 80% !important;}
+.size-row {max-width: 90% !important;}
+.pad-bottom {padding-bottom: 180px;}
+.pad-bottom-sm {padding-bottom: 60px;}
+.no-pad {padding: 0;}
+// END USEFUL HTML CLASSES //
+
+// LINK COLORS //
+$normal : #282828;
+$hover : #282828;
+$active : #282828;
+$visited: #282828;
+$focus: #282828;
+
+/* -----------------------------------------
+   MIXINS
+----------------------------------------- */
+// LINK COLORS MIXIN //
+a	{
+  @include link-colors($normal, $hover, $active, $visited, $focus); 
+	text-decoration: none;
+}
+// FONT SMOOTHING MIXIN //
+@mixin font-smoothing($value: on) {
+	@if $value == on {
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+	@else {
+		-webkit-font-smoothing: subpixel-antialiased;
+		-moz-osx-font-smoothing: auto;
+	}
+}
+// END OF MIXINS //
+
