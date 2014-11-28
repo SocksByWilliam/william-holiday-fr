@@ -197,10 +197,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 0;
 }
 
+@font-face {
+  font-family: 'BrandonGrotesque-Medium';
+  src: url("webfonts/2CB844_4_0.eot");
+  src: url("webfonts/2CB844_4_0.eot?#iefix") format("embedded-opentype"), url("../webfonts/2CB844_4_0.woff2") format("woff2"), url("../webfonts/2CB844_4_0.woff") format("woff"), url("../webfonts/2CB844_4_0.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'BrandonGrotesque-LightItalic';
+  src: url("webfonts/2CB844_6_0.eot");
+  src: url("webfonts/2CB844_6_0.eot?#iefix") format("embedded-opentype"), url("../webfonts/2CB844_6_0.woff2") format("woff2"), url("../webfonts/2CB844_6_0.woff") format("woff"), url("../webfonts/2CB844_6_0.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'BrandonGrotesque-Light';
+  src: url("../webfonts/2CB844_7_0.eot");
+  src: url("../webfonts/2CB844_7_0.eot?#iefix") format("embedded-opentype"), url("../webfonts/2CB844_7_0.woff2") format("woff2"), url("../webfonts/2CB844_7_0.woff") format("woff"), url("../webfonts/2CB844_7_0.ttf") format("truetype");
+}
 /* -----------------------------------------
    MIXINS
 ----------------------------------------- */
-/* line 59, ../scss/architecture.scss */
+/* line 86, ../scss/architecture.scss */
 a {
   color: #282828;
   text-decoration: none;

@@ -6,49 +6,72 @@ body {
 	height: 100%;
 }
 .display-table {
-	display: table;
+	@media #{$medium-up}{
+	  display: table;
+	}
 }
 .display-vertical {
-	display: table-cell;
-	vertical-align: middle;
+	@media #{$medium-up}{
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+.width-style{
+	@media #{$small-only} {
+		max-width: 80%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&.ext{
+		@media #{$small-only} {
+			max-width: 50%;
+		}
+	}
 }
 h1 {
 	color: $white;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
+	font-family: BrandonGrotesque-Light;
+	font-weight: normal;
+	font-style: normal;
 	margin-bottom: 15px;
 	@media #{$small-only} {
 		font-size: 1.5rem;
 	}
 	@media #{$medium-only} {
-		font-size: 2rem;
+		font-size: 2.8rem;
+		padding-top: 120px;
 	}
 	@media #{$large-up} {
-		font-size: 2.5rem;
+		font-size: 3.438rem;
+		padding-top: 120px;
 	}
 }
-h2{
+p {
 	color: $white;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
+	font-family: BrandonGrotesque-Light;
+	font-weight: normal;
+	font-style: normal;
 	margin-bottom: 15px;
-	text-transform: uppercase;
+	line-height: 36px;
 	@media #{$small-only} {
 		font-size: 1rem;
+		line-height: 26px;
+		margin-top: 15px;
 	}
 	@media #{$medium-only} {
-		font-size: 1.5rem;
+		font-size: 1.625rem;
 	}
 	@media #{$large-up} {
-		font-size: 2rem;
+		font-size: 1.625rem;
 	}
 }
-.button-cta{
+.price-box {
 	border-style: solid;
-	border-width: 0px;
-	cursor: pointer;
-	font-family: "Open Sans", sans-serif;
+	border-width: 1px;
+	font-family: BrandonGrotesque-Medium;
 	font-weight: normal;
+	font-style: normal;
 	line-height: normal;
 	margin: 0 0 1.25rem;
 	position: relative;
@@ -57,228 +80,545 @@ h2{
 	-webkit-appearance: none;
 	-webkit-border-radius: 0;
 	display: inline-block;
-	padding-top: 1rem;
+	padding-top: 0.5rem;
 	padding-right: 2rem;
-	padding-bottom: 1.0625rem;
+	padding-bottom: 0.5rem;
 	padding-left: 2rem;
-	font-size: 1rem;
-	background-color: #de1821;
-	border-color: #de1821;
+	font-size: 1.25rem;
+	border: #000;
 	transition: background-color 300ms ease-out;
 	margin-top: 40px;
-	color: $white;
-	&:hover{
-		background: #960d14;
-		color: $white;
+	color: #000 !important;
+	background: #fff;
+	@media #{$small-only} {
+		margin-top: 10px;
 	}
+}
+.button-cta {
+	border-style: solid;
+	border-width: 0px;
+	cursor: pointer;
+	font-family: BrandonGrotesque-Medium;
+	font-weight: normal;
+	font-style: normal;
+	line-height: normal;
+	margin: 0 0 1.25rem;
+	position: relative;
+	text-decoration: none;
+	text-align: center;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	display: inline-block;
+	padding-top: 0.5rem;
+	padding-right: 2rem;
+	padding-bottom: 0.5rem;
+	padding-left: 2rem;
+	font-size: 1.25rem;
+	border: none;
+	transition: background-color 300ms ease-out;
+	margin-top: 40px;
+	color: $white !important;
+	@media #{$small-only} {
+		margin-top: 10px;
+	}
+	&.heart {
+		background: #f85437;
+		&:hover {
+			background: #e34d33;
+			color: $white;
+		}
+	}
+	&.maze {
+		background: #e71c24;
+		&:hover {
+			background: #ce1a21;
+			color: $white;
+		}
+	}
+	&.paradise {
+		background: #2b7cd6;
+		&:hover {
+			background: #2468b3;
+			color: $white;
+		}
+	}
+	&.deuces {
+		background: #6026aa;
+		&:hover {
+			background: #4d1e89;
+			color: $white;
+		}
+	}
+	&.france {
+		background: #ee275c;
+		&:hover {
+			background: #ce2250;
+			color: $white;
+		}
+	}
+	&.birthday {
+		background: #0040de;
+		&:hover {
+			background: #0132aa;
+			color: $white;
+		}
+	}
+	&.dna {
+		background: #4d9eb3;
+		&:hover {
+			background: #3d8091;
+			color: $white;
+		}
+	}
+	&.habitat67 {
+		background: #d0a200;
+		&:hover {
+			background: #af8801;
+			color: $white;
+		}
+	}
+	&.biosphere {
+		background: #dd2e33;
+		&:hover {
+			background: #c0292d;
+			color: $white;
+		}
+	}
+	&.quotidien {
+		background: #00baf0;
+		&:hover {
+			background: #019cc9;
+			color: $white;
+		}
+	}
+}
+.text-style{
+	@media #{$small-only} {
+		text-align: center;
+	}
+	@media #{$medium-only} {
+		text-align: left;
+	}
+	@media #{$large-up} {
+		text-align: left;
+	}
+}
+/* -----------------------------------------
+   main-nav
+----------------------------------------- */
+#main-nav.contain-to-grid{
+	top: 0;
+	position: fixed;
+	z-index: 100;
+	background: #212021;
+	@media #{$medium-up} {
+    height: 45px;
+  }
+		.top-bar{
+			background: #212021;
+			max-width: 70rem;
+			@media #{$medium-up} {
+      	height: 45px;
+    	}
+			.no-bg{background:none;}
+    	.name {
+    		padding-top: 7px;
+    		padding-right: 18px;
+    		@media #{$small-only} {
+					padding-left: 10px;
+				}
+    	}
+			&.expanded{
+				.title-area{
+					background: #212021;
+				}
+			}
+			.toggle-topbar {
+				&.menu-icon a span::after {
+					box-shadow: 0 0px 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff;
+					width: 20px;
+				}
+				&.menu-icon a::after {
+				  box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
+				}
+			}
+
+			.top-bar-section { 
+				li{
+					&.share {
+						background: #212021;
+						span {
+							color: #fff;
+							font-family: BrandonGrotesque-LightItalic;
+							font-weight: normal;
+							font-style: normal;
+							font-size: 1rem;
+							padding-left: 10px;
+							padding-right: 10px;
+						}
+					}
+				}
+				img.pad{
+					@media #{$medium-up} {
+		      	padding-top: 7px;
+		    	}
+				}
+				ul li > a {
+					width: 100%;
+					color: #fff;
+					font-family: BrandonGrotesque-Light;
+					font-weight: normal;
+					font-style: normal;
+					font-size: 1rem;
+					&:hover{
+						color: #eee;
+					}
+
+				}
+
+				li:not(.has-form) a:not(.button){
+					background: #212021;
+				}
+			}
+		}
+
 }
 /* -----------------------------------------
   hero
 ----------------------------------------- */
 #hero {
-	background: url("../img/hero-bg.jpg") top right no-repeat;
-	background-size: cover;
 	width: 100%;
-	padding: 80px 0;
+	img#logo{
+		@media #{$medium-only} {
+			position: relative;
+			top: -25px;
+		}
+		@media #{$large-up} {
+			position: relative;
+			top: -35px;
+		}
+	}
 	@media #{$small-only} {
-		min-height: 500px;
+		height: 393px;
+		background: url("../img/bg/mob/panels_01.jpg") no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		padding: 150px 0 10px 0;
 	}
-	@media #{$medium-only} {
-		min-height: 100%;
+	@media #{$medium-up} {
+		height: 868px;
+		background: url("../img/bg/panels_01.jpg") no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		padding: 80px 0;
 	}
-	@media #{$large-up} {
-		min-height: 100%;
+	ul {
+		text-align: center;
+		margin: 30px auto 0 auto;
+		li{
+			color: #fff;
+			font-family: BrandonGrotesque-Light;
+			font-weight: normal;
+			font-style: normal;
+			font-size: 1rem;
+		}
 	}
 }
-
 /* -----------------------------------------
   follow-your-heart
 ----------------------------------------- */
 #follow-your-heart{
-	background: url("../img/follow-your-heart-bg.jpg") no-repeat;
-	background-position: 50% 50%;
-	background-size: cover;
 	width: 100%;
-	padding: 80px 0;
 	@media #{$small-only} {
-		min-height: 500px;
+		height: 685px;
+		background: url("../img/bg/mob/panels_02.jpg") no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		padding: 345px 0 10px 0;
 	}
-	@media #{$medium-only} {
-		min-height: 100%;
-	}
-	@media #{$large-up} {
-		min-height: 100%;
+	@media #{$medium-up} {
+		height: 737px;
+		background: url("../img/bg/panels_02.jpg") no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		padding: 80px 0;
 	}
 }
-
 /* -----------------------------------------
   in-the-maze
 ----------------------------------------- */
 #in-the-maze {
-	background: url("../img/in-the-maze-bg.jpg") no-repeat;
-	background-position: 50% 50%;
-	background-size: cover;
 	width: 100%;
-	padding: 80px 0;
 	@media #{$small-only} {
-		min-height: 500px;
+		height: 756px;
+		background: url("../img/bg/mob/panels_03.jpg") no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		padding: 396px 0 10px 0;
 	}
-	@media #{$medium-only} {
-		min-height: 100%;
-	}
-	@media #{$large-up} {
-		min-height: 100%;
+	@media #{$medium-up} {
+		height: 814px;
+		background: url("../img/bg/panels_03.jpg") no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		padding: 80px 0;
 	}
 }
 /* -----------------------------------------
   paradise
 ----------------------------------------- */
 #paradise {
-	background: url("../img/paradise-bg.jpg") no-repeat;
-	background-position: 50% 50%;
-	background-size: cover;
 	width: 100%;
-	padding: 80px 0;
 	@media #{$small-only} {
-		min-height: 500px;
+		height: 680px;
+		background: url("../img/bg/mob/panels_04.jpg") no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		padding: 328px 0 10px 0;
 	}
-	@media #{$medium-only} {
-		min-height: 100%;
-	}
-	@media #{$large-up} {
-		min-height: 100%;
+	@media #{$medium-up} {
+		height: 783px;
+		background: url("../img/bg/panels_04.jpg") no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		padding: 80px 0;
 	}
 }
 /* -----------------------------------------
   deuce-of-spades
 ----------------------------------------- */
 #deuce-of-spades {
-	background: url("../img/deuce-of-spades-bg.jpg") no-repeat;
-	background-position: 50% 50%;
-	background-size: cover;
 	width: 100%;
-	padding: 80px 0;
 	@media #{$small-only} {
-		min-height: 500px;
+		height: 661px;
+		background: url("../img/bg/mob/panels_05.jpg") no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		padding: 328px 0 10px 0;
 	}
-	@media #{$medium-only} {
-		min-height: 100%;
-	}
-	@media #{$large-up} {
-		min-height: 100%;
+	@media #{$medium-up} {
+		height: 637px;
+		background: url("../img/bg/panels_05.jpg") no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		padding: 80px 0;
 	}
 }
 /* -----------------------------------------
   le-tour-de-france
 ----------------------------------------- */
 #le-tour-de-france {
-	background: url("../img/le-tour-de-france-bg.jpg") no-repeat;
-	background-position: 50% 50%;
-	background-size: cover;
 	width: 100%;
-	padding: 80px 0;
 	@media #{$small-only} {
-		min-height: 500px;
+		height: 823px;
+		background: url("../img/bg/mob/panels_06.jpg") no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		padding: 475px 0 10px 0;
 	}
-	@media #{$medium-only} {
-		min-height: 100%;
-	}
-	@media #{$large-up} {
-		min-height: 100%;
+	@media #{$medium-up} {
+		height: 829px;
+		background: url("../img/bg/panels_06.jpg") no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		padding: 80px 0;
 	}
 }
 /* -----------------------------------------
   happy-birthday
 ----------------------------------------- */
 #happy-birthday {
-	background: url("../img/happy-birthday-bg.jpg") no-repeat;
-	background-position: 50% 50%;
-	background-size: cover;
 	width: 100%;
-	padding: 80px 0;
 	@media #{$small-only} {
-		min-height: 500px;
+		height: 842px;
+		background: url("../img/bg/mob/panels_07.jpg") no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		padding: 450px 0 10px 0;
 	}
-	@media #{$medium-only} {
-		min-height: 100%;
-	}
-	@media #{$large-up} {
-		min-height: 100%;
+	@media #{$medium-up} {
+		height: 904px;
+		background: url("../img/bg/panels_07.jpg") no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		padding: 80px 0;
 	}
 }
 /* -----------------------------------------
   dna
 ----------------------------------------- */
 #dna {
-	background: url("../img/dna-bg.jpg") no-repeat;
-	background-position: 50% 50%;
-	background-size: cover;
 	width: 100%;
-	padding: 80px 0;
 	@media #{$small-only} {
-		min-height: 500px;
+		height: 706px;
+		background: url("../img/bg/mob/panels_08.jpg") no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		padding: 350px 0 10px 0;
 	}
-	@media #{$medium-only} {
-		min-height: 100%;
-	}
-	@media #{$large-up} {
-		min-height: 100%;
+	@media #{$medium-up} {
+		height: 693px;
+		background: url("../img/bg/panels_08.jpg") no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		padding: 80px 0;
 	}
 }
 /* -----------------------------------------
   habitat-67
 ----------------------------------------- */
 #habitat-67 {
-	background: url("../img/habitat-67-bg.jpg") no-repeat;
-	background-position: 50% 50%;
-	background-size: cover;
 	width: 100%;
-	padding: 80px 0;
 	@media #{$small-only} {
-		min-height: 500px;
+		height: 784px;
+		background: url("../img/bg/mob/panels_09.jpg") no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		padding: 420px 0 10px 0;
 	}
-	@media #{$medium-only} {
-		min-height: 100%;
-	}
-	@media #{$large-up} {
-		min-height: 100%;
+	@media #{$medium-up} {
+		height: 815px;
+		background: url("../img/bg/panels_09.jpg") no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		padding: 80px 0;
 	}
 }
 /* -----------------------------------------
   biosphere
 ----------------------------------------- */
 #biosphere {
-	background: url("../img/biosphere-bg.jpg") no-repeat;
-	background-position: 50% 50%;
-	background-size: cover;
 	width: 100%;
-	padding: 80px 0;
 	@media #{$small-only} {
-		min-height: 500px;
+		height: 851px;
+		background: url("../img/bg/mob/panels_10.jpg") no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		padding: 470px 0 10px 0;
 	}
-	@media #{$medium-only} {
-		min-height: 100%;
-	}
-	@media #{$large-up} {
-		min-height: 100%;
+	@media #{$medium-up} {
+		height: 857px;
+		background: url("../img/bg/panels_10.jpg") no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		padding: 80px 0;
 	}
 }
 /* -----------------------------------------
   le-quotidien
 ----------------------------------------- */
 #le-quotidien {
-	background: url("../img/le-quotidien-bg.jpg") no-repeat;
-	background-position: 50% 50%;
-	background-size: cover;
 	width: 100%;
-	padding: 80px 0;
 	@media #{$small-only} {
-		min-height: 500px;
+		height: 737px;
+		background: url("../img/bg/mob/panels_11.jpg") no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		padding: 320px 0 10px 0;
 	}
-	@media #{$medium-only} {
-		min-height: 100%;
+	@media #{$medium-up} {
+		height: 877px;
+		background: url("../img/bg/panels_11.jpg") no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		padding: 80px 0;
 	}
-	@media #{$large-up} {
-		min-height: 100%;
+}
+/* -----------------------------------------
+  footer
+----------------------------------------- */
+#footer {
+	background: #212021;
+	min-height: 50px;
+	padding: 20px 0;
+
+	ul {
+		margin-bottom: 0;
+		&#william {
+			li{
+				@media #{$small-only}{
+					display: block;
+					float: center;
+					text-align: center;
+				}
+				img{
+					@media #{$small-only}{	
+						display: block;
+						margin-left: auto;
+						margin-right: auto;
+					}
+				}
+				
+				&:nth-child(2){
+					color: #fff;
+					font-family: BrandonGrotesque-Light;
+					font-weight: normal;
+					font-style: normal;
+					text-transform: uppercase;
+					font-size: 0.875rem;
+					@media #{$small-only}{
+						padding: 10px 0;
+					}
+					@media #{$medium-up}{
+						padding-top: 30px;
+					}
+				}
+				&:nth-child(3){
+					@media #{$small-only}{
+						padding: 10px 0;
+					}
+					@media #{$medium-up}{
+						padding-top: 22px;
+					}
+				}
+				&:nth-child(4){
+					a {
+						color: #9c9c9c;
+						font-family: BrandonGrotesque-Light;
+						font-weight: normal;
+						font-style: normal;
+						font-size: 1.25rem;
+						@media #{$small-only}{
+							padding: 10px 0;
+						}
+						@media #{$medium-up}{
+							padding-top: 27px;
+						}
+					}
+					
+				}
+			}
+		}
+		&#social {
+			padding-top: 25px;
+			@media #{$small-only} {
+				float: none !important;
+			}
+			li{
+				&:nth-child(2){
+					color: #fff;
+					font-family: BrandonGrotesque-Light;
+					font-weight: normal;
+					font-style: normal;
+					font-size: 1.25rem;
+				}
+				a{
+					img {
+					  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+					  filter: alpha(opacity=50);
+					  -moz-opacity: 0.5;
+					  -khtml-opacity: 0.5;
+					  opacity: 0.5;
+					  &:hover{
+				  		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+						  filter: alpha(opacity=100);
+						  -moz-opacity: 1;
+						  -khtml-opacity: 1;
+						  opacity: 1;
+					  }
+					}
+				}
+			}
+		}
 	}
 }
