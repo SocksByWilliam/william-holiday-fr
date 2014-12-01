@@ -32,6 +32,20 @@ body {
 		padding-bottom: 10px;
 	}
 }
+#top-chk{
+	top: 14px;
+	right: 60px;
+	position: fixed;
+	z-index: 200;
+	.checkout{
+		color: #ff303b;
+		font-size:  0.875rem;
+		font-family: BrandonGrotesque-Medium;
+		font-weight: bold;
+		font-style: normal;
+		text-transform: uppercase;
+	}
+}
 h1 {
 	color: $white;
 	font-family: BrandonGrotesque-Light;
@@ -206,6 +220,26 @@ p {
 		text-align: left;
 	}
 }
+#holiday{
+	top: 45px;
+	position: fixed;
+	background: #ff303b;
+	width: 100%;
+	z-index: 300;
+	p {
+		color: #fff;
+		font-family: BrandonGrotesque-Light;
+		font-weight: normal;
+		font-style: normal;
+		font-size: 1rem;
+		text-transform: uppercase;
+		margin:5px auto;
+		strong{
+			font-family: BrandonGrotesque-Medium;
+			font-weight: bold;
+		}
+	}
+}
 /* -----------------------------------------
    main-nav
 ----------------------------------------- */
@@ -215,13 +249,13 @@ p {
 	z-index: 100;
 	background: #212021;
 	@media #{$medium-up} {
-    height: 52px;
+    height: 54px;
   }
 		.top-bar{
 			background: #212021;
 			max-width: 70rem;
 			@media #{$medium-up} {
-      	height: 52px;
+      	height: 54px;
     	}
     	.checkout{
 				color: #ff303b;

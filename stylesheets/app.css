@@ -9338,6 +9338,23 @@ body {
 }
 
 /* line 35, ../scss/app.scss */
+#top-chk {
+  top: 14px;
+  right: 60px;
+  position: fixed;
+  z-index: 200;
+}
+/* line 40, ../scss/app.scss */
+#top-chk .checkout {
+  color: #ff303b;
+  font-size: 0.875rem;
+  font-family: BrandonGrotesque-Medium;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+/* line 49, ../scss/app.scss */
 h1 {
   color: white;
   font-family: BrandonGrotesque-Light;
@@ -9346,27 +9363,27 @@ h1 {
   margin-bottom: 15px;
 }
 @media only screen and (max-width: 40em) {
-  /* line 35, ../scss/app.scss */
+  /* line 49, ../scss/app.scss */
   h1 {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 35, ../scss/app.scss */
+  /* line 49, ../scss/app.scss */
   h1 {
     font-size: 2.8rem;
     padding-top: 120px;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 35, ../scss/app.scss */
+  /* line 49, ../scss/app.scss */
   h1 {
     font-size: 3.438rem;
     padding-top: 120px;
   }
 }
 
-/* line 53, ../scss/app.scss */
+/* line 67, ../scss/app.scss */
 p {
   color: white;
   font-family: BrandonGrotesque-Light;
@@ -9376,7 +9393,7 @@ p {
   line-height: 36px;
 }
 @media only screen and (max-width: 40em) {
-  /* line 53, ../scss/app.scss */
+  /* line 67, ../scss/app.scss */
   p {
     font-size: 1rem;
     line-height: 26px;
@@ -9384,19 +9401,19 @@ p {
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 53, ../scss/app.scss */
+  /* line 67, ../scss/app.scss */
   p {
     font-size: 1.625rem;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 53, ../scss/app.scss */
+  /* line 67, ../scss/app.scss */
   p {
     font-size: 1.625rem;
   }
 }
 
-/* line 72, ../scss/app.scss */
+/* line 86, ../scss/app.scss */
 .price-box {
   border-style: solid;
   border-width: 1px;
@@ -9423,13 +9440,13 @@ p {
   background: #fff;
 }
 @media only screen and (max-width: 40em) {
-  /* line 72, ../scss/app.scss */
+  /* line 86, ../scss/app.scss */
   .price-box {
     margin-top: 10px;
   }
 }
 
-/* line 100, ../scss/app.scss */
+/* line 114, ../scss/app.scss */
 .button-cta {
   border-style: solid;
   border-width: 0px;
@@ -9456,125 +9473,149 @@ p {
   color: white !important;
 }
 @media only screen and (max-width: 40em) {
-  /* line 100, ../scss/app.scss */
+  /* line 114, ../scss/app.scss */
   .button-cta {
     margin-top: 10px;
   }
 }
-/* line 127, ../scss/app.scss */
+/* line 141, ../scss/app.scss */
 .button-cta.heart {
   background: #f85437;
 }
-/* line 129, ../scss/app.scss */
+/* line 143, ../scss/app.scss */
 .button-cta.heart:hover {
   background: #e34d33;
   color: white;
 }
-/* line 134, ../scss/app.scss */
+/* line 148, ../scss/app.scss */
 .button-cta.maze {
   background: #e71c24;
 }
-/* line 136, ../scss/app.scss */
+/* line 150, ../scss/app.scss */
 .button-cta.maze:hover {
   background: #ce1a21;
   color: white;
 }
-/* line 141, ../scss/app.scss */
+/* line 155, ../scss/app.scss */
 .button-cta.paradise {
   background: #2b7cd6;
 }
-/* line 143, ../scss/app.scss */
+/* line 157, ../scss/app.scss */
 .button-cta.paradise:hover {
   background: #2468b3;
   color: white;
 }
-/* line 148, ../scss/app.scss */
+/* line 162, ../scss/app.scss */
 .button-cta.deuces {
   background: #6026aa;
 }
-/* line 150, ../scss/app.scss */
+/* line 164, ../scss/app.scss */
 .button-cta.deuces:hover {
   background: #4d1e89;
   color: white;
 }
-/* line 155, ../scss/app.scss */
+/* line 169, ../scss/app.scss */
 .button-cta.france {
   background: #ee275c;
 }
-/* line 157, ../scss/app.scss */
+/* line 171, ../scss/app.scss */
 .button-cta.france:hover {
   background: #ce2250;
   color: white;
 }
-/* line 162, ../scss/app.scss */
+/* line 176, ../scss/app.scss */
 .button-cta.birthday {
   background: #0040de;
 }
-/* line 164, ../scss/app.scss */
+/* line 178, ../scss/app.scss */
 .button-cta.birthday:hover {
   background: #0132aa;
   color: white;
 }
-/* line 169, ../scss/app.scss */
+/* line 183, ../scss/app.scss */
 .button-cta.dna {
   background: #4d9eb3;
 }
-/* line 171, ../scss/app.scss */
+/* line 185, ../scss/app.scss */
 .button-cta.dna:hover {
   background: #3d8091;
   color: white;
 }
-/* line 176, ../scss/app.scss */
+/* line 190, ../scss/app.scss */
 .button-cta.habitat67 {
   background: #d0a200;
 }
-/* line 178, ../scss/app.scss */
+/* line 192, ../scss/app.scss */
 .button-cta.habitat67:hover {
   background: #af8801;
   color: white;
 }
-/* line 183, ../scss/app.scss */
+/* line 197, ../scss/app.scss */
 .button-cta.biosphere {
   background: #dd2e33;
 }
-/* line 185, ../scss/app.scss */
+/* line 199, ../scss/app.scss */
 .button-cta.biosphere:hover {
   background: #c0292d;
   color: white;
 }
-/* line 190, ../scss/app.scss */
+/* line 204, ../scss/app.scss */
 .button-cta.quotidien {
   background: #00baf0;
 }
-/* line 192, ../scss/app.scss */
+/* line 206, ../scss/app.scss */
 .button-cta.quotidien:hover {
   background: #019cc9;
   color: white;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 198, ../scss/app.scss */
+  /* line 212, ../scss/app.scss */
   .text-style {
     text-align: center;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 198, ../scss/app.scss */
+  /* line 212, ../scss/app.scss */
   .text-style {
     text-align: left;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 198, ../scss/app.scss */
+  /* line 212, ../scss/app.scss */
   .text-style {
     text-align: left;
   }
 }
 
+/* line 223, ../scss/app.scss */
+#holiday {
+  top: 45px;
+  position: fixed;
+  background: #ff303b;
+  width: 100%;
+  z-index: 300;
+}
+/* line 229, ../scss/app.scss */
+#holiday p {
+  color: #fff;
+  font-family: BrandonGrotesque-Light;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 5px auto;
+}
+/* line 237, ../scss/app.scss */
+#holiday p strong {
+  font-family: BrandonGrotesque-Medium;
+  font-weight: bold;
+}
+
 /* -----------------------------------------
    main-nav
 ----------------------------------------- */
-/* line 212, ../scss/app.scss */
+/* line 246, ../scss/app.scss */
 #main-nav.contain-to-grid {
   top: 0;
   position: fixed;
@@ -9582,23 +9623,23 @@ p {
   background: #212021;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 212, ../scss/app.scss */
+  /* line 246, ../scss/app.scss */
   #main-nav.contain-to-grid {
-    height: 52px;
+    height: 54px;
   }
 }
-/* line 220, ../scss/app.scss */
+/* line 254, ../scss/app.scss */
 #main-nav.contain-to-grid .top-bar {
   background: #212021;
   max-width: 70rem;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 220, ../scss/app.scss */
+  /* line 254, ../scss/app.scss */
   #main-nav.contain-to-grid .top-bar {
-    height: 52px;
+    height: 54px;
   }
 }
-/* line 226, ../scss/app.scss */
+/* line 260, ../scss/app.scss */
 #main-nav.contain-to-grid .top-bar .checkout {
   color: #ff303b;
   font-size: 0.875rem;
@@ -9607,39 +9648,39 @@ p {
   font-style: normal;
   text-transform: uppercase;
 }
-/* line 234, ../scss/app.scss */
+/* line 268, ../scss/app.scss */
 #main-nav.contain-to-grid .top-bar .no-bg {
   background: none;
 }
-/* line 235, ../scss/app.scss */
+/* line 269, ../scss/app.scss */
 #main-nav.contain-to-grid .top-bar .name {
   padding-top: 7px;
   padding-right: 18px;
 }
 @media only screen and (max-width: 40em) {
-  /* line 235, ../scss/app.scss */
+  /* line 269, ../scss/app.scss */
   #main-nav.contain-to-grid .top-bar .name {
     padding-left: 10px;
   }
 }
-/* line 243, ../scss/app.scss */
+/* line 277, ../scss/app.scss */
 #main-nav.contain-to-grid .top-bar.expanded .title-area {
   background: #212021;
 }
-/* line 248, ../scss/app.scss */
+/* line 282, ../scss/app.scss */
 #main-nav.contain-to-grid .top-bar .toggle-topbar.menu-icon a span::after {
   box-shadow: 0 0px 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff;
   width: 20px;
 }
-/* line 252, ../scss/app.scss */
+/* line 286, ../scss/app.scss */
 #main-nav.contain-to-grid .top-bar .toggle-topbar.menu-icon a::after {
   box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
 }
-/* line 259, ../scss/app.scss */
+/* line 293, ../scss/app.scss */
 #main-nav.contain-to-grid .top-bar .top-bar-section li.share {
   background: #212021;
 }
-/* line 261, ../scss/app.scss */
+/* line 295, ../scss/app.scss */
 #main-nav.contain-to-grid .top-bar .top-bar-section li.share span {
   color: #fff;
   font-family: BrandonGrotesque-LightItalic;
@@ -9650,20 +9691,20 @@ p {
   padding-right: 10px;
 }
 @media only screen and (max-width: 40em) {
-  /* line 261, ../scss/app.scss */
+  /* line 295, ../scss/app.scss */
   #main-nav.contain-to-grid .top-bar .top-bar-section li.share span {
     padding-left: 0px;
   }
 }
-/* line 274, ../scss/app.scss */
+/* line 308, ../scss/app.scss */
 #main-nav.contain-to-grid .top-bar .top-bar-section li.mod {
   margin-left: 15px;
 }
-/* line 276, ../scss/app.scss */
+/* line 310, ../scss/app.scss */
 #main-nav.contain-to-grid .top-bar .top-bar-section li.mod a {
   padding: 0;
 }
-/* line 280, ../scss/app.scss */
+/* line 314, ../scss/app.scss */
 #main-nav.contain-to-grid .top-bar .top-bar-section li#bag {
   background: #212021;
   font-family: BrandonGrotesque-Light;
@@ -9672,23 +9713,23 @@ p {
   font-size: 1.125rem;
   color: #fff;
 }
-/* line 287, ../scss/app.scss */
+/* line 321, ../scss/app.scss */
 #main-nav.contain-to-grid .top-bar .top-bar-section li#bag span.count {
   color: #fff;
   font-family: BrandonGrotesque-Medium;
 }
-/* line 293, ../scss/app.scss */
+/* line 327, ../scss/app.scss */
 #main-nav.contain-to-grid .top-bar .top-bar-section li:nth-child(3) a, #main-nav.contain-to-grid .top-bar .top-bar-section li:nth-child(4) a, #main-nav.contain-to-grid .top-bar .top-bar-section li:nth-child(5) a, #main-nav.contain-to-grid .top-bar .top-bar-section li:nth-child(6) a {
   padding-right: 3px;
   padding-left: 3px;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 299, ../scss/app.scss */
+  /* line 333, ../scss/app.scss */
   #main-nav.contain-to-grid .top-bar .top-bar-section img.pad {
     padding-top: 12px;
   }
 }
-/* line 304, ../scss/app.scss */
+/* line 338, ../scss/app.scss */
 #main-nav.contain-to-grid .top-bar .top-bar-section ul li > a {
   width: 100%;
   color: #fff;
@@ -9697,11 +9738,11 @@ p {
   font-style: normal;
   font-size: 1rem;
 }
-/* line 311, ../scss/app.scss */
+/* line 345, ../scss/app.scss */
 #main-nav.contain-to-grid .top-bar .top-bar-section ul li > a:hover {
   color: #eee;
 }
-/* line 317, ../scss/app.scss */
+/* line 351, ../scss/app.scss */
 #main-nav.contain-to-grid .top-bar .top-bar-section li:not(.has-form) a:not(.button) {
   background: #212021;
 }
@@ -9709,24 +9750,24 @@ p {
 /* -----------------------------------------
   hero
 ----------------------------------------- */
-/* line 327, ../scss/app.scss */
+/* line 361, ../scss/app.scss */
 #hero {
   width: 100%;
 }
 @media only screen and (max-width: 40em) {
-  /* line 329, ../scss/app.scss */
+  /* line 363, ../scss/app.scss */
   #hero img#logo {
     max-width: 15%;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 329, ../scss/app.scss */
+  /* line 363, ../scss/app.scss */
   #hero img#logo {
     max-width: 18%;
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 327, ../scss/app.scss */
+  /* line 361, ../scss/app.scss */
   #hero {
     height: 393px;
     background: url("../img/bg/mob/panels_01.jpg") no-repeat;
@@ -9736,7 +9777,7 @@ p {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 327, ../scss/app.scss */
+  /* line 361, ../scss/app.scss */
   #hero {
     height: 868px;
     background: url("../img/bg/panels_01.jpg") no-repeat;
@@ -9745,19 +9786,19 @@ p {
     padding: 80px 0;
   }
 }
-/* line 351, ../scss/app.scss */
+/* line 385, ../scss/app.scss */
 #hero ul {
   text-align: center;
   margin: 30px auto 0 auto;
   float: none;
 }
 @media only screen and (max-width: 40em) {
-  /* line 351, ../scss/app.scss */
+  /* line 385, ../scss/app.scss */
   #hero ul {
     display: inline-block !important;
   }
 }
-/* line 358, ../scss/app.scss */
+/* line 392, ../scss/app.scss */
 #hero ul li {
   color: #fff;
   font-family: BrandonGrotesque-Light;
@@ -9765,11 +9806,11 @@ p {
   font-style: normal;
   font-size: 1rem;
 }
-/* line 364, ../scss/app.scss */
+/* line 398, ../scss/app.scss */
 #hero ul li:nth-child(1) {
   margin-left: 0;
 }
-/* line 367, ../scss/app.scss */
+/* line 401, ../scss/app.scss */
 #hero ul li:nth-child(2) {
   padding-top: 5px;
 }
@@ -9777,12 +9818,12 @@ p {
 /* -----------------------------------------
   follow-your-heart
 ----------------------------------------- */
-/* line 376, ../scss/app.scss */
+/* line 410, ../scss/app.scss */
 #follow-your-heart {
   width: 100%;
 }
 @media only screen and (max-width: 40em) {
-  /* line 376, ../scss/app.scss */
+  /* line 410, ../scss/app.scss */
   #follow-your-heart {
     height: 685px;
     background: url("../img/bg/mob/panels_02.jpg") no-repeat;
@@ -9792,7 +9833,7 @@ p {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 376, ../scss/app.scss */
+  /* line 410, ../scss/app.scss */
   #follow-your-heart {
     height: 737px;
     background: url("../img/bg/panels_02.jpg") no-repeat;
@@ -9805,12 +9846,12 @@ p {
 /* -----------------------------------------
   in-the-maze
 ----------------------------------------- */
-/* line 396, ../scss/app.scss */
+/* line 430, ../scss/app.scss */
 #in-the-maze {
   width: 100%;
 }
 @media only screen and (max-width: 40em) {
-  /* line 396, ../scss/app.scss */
+  /* line 430, ../scss/app.scss */
   #in-the-maze {
     height: 756px;
     background: url("../img/bg/mob/panels_03.jpg") no-repeat;
@@ -9820,7 +9861,7 @@ p {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 396, ../scss/app.scss */
+  /* line 430, ../scss/app.scss */
   #in-the-maze {
     height: 814px;
     background: url("../img/bg/panels_03.jpg") no-repeat;
@@ -9833,12 +9874,12 @@ p {
 /* -----------------------------------------
   paradise
 ----------------------------------------- */
-/* line 416, ../scss/app.scss */
+/* line 450, ../scss/app.scss */
 #paradise {
   width: 100%;
 }
 @media only screen and (max-width: 40em) {
-  /* line 416, ../scss/app.scss */
+  /* line 450, ../scss/app.scss */
   #paradise {
     height: 680px;
     background: url("../img/bg/mob/panels_04.jpg") no-repeat;
@@ -9848,7 +9889,7 @@ p {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 416, ../scss/app.scss */
+  /* line 450, ../scss/app.scss */
   #paradise {
     height: 783px;
     background: url("../img/bg/panels_04.jpg") no-repeat;
@@ -9861,12 +9902,12 @@ p {
 /* -----------------------------------------
   deuce-of-spades
 ----------------------------------------- */
-/* line 436, ../scss/app.scss */
+/* line 470, ../scss/app.scss */
 #deuce-of-spades {
   width: 100%;
 }
 @media only screen and (max-width: 40em) {
-  /* line 436, ../scss/app.scss */
+  /* line 470, ../scss/app.scss */
   #deuce-of-spades {
     height: 661px;
     background: url("../img/bg/mob/panels_05.jpg") no-repeat;
@@ -9876,7 +9917,7 @@ p {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 436, ../scss/app.scss */
+  /* line 470, ../scss/app.scss */
   #deuce-of-spades {
     height: 637px;
     background: url("../img/bg/panels_05.jpg") no-repeat;
@@ -9889,12 +9930,12 @@ p {
 /* -----------------------------------------
   le-tour-de-france
 ----------------------------------------- */
-/* line 456, ../scss/app.scss */
+/* line 490, ../scss/app.scss */
 #le-tour-de-france {
   width: 100%;
 }
 @media only screen and (max-width: 40em) {
-  /* line 456, ../scss/app.scss */
+  /* line 490, ../scss/app.scss */
   #le-tour-de-france {
     height: 823px;
     background: url("../img/bg/mob/panels_06.jpg") no-repeat;
@@ -9904,7 +9945,7 @@ p {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 456, ../scss/app.scss */
+  /* line 490, ../scss/app.scss */
   #le-tour-de-france {
     height: 829px;
     background: url("../img/bg/panels_06.jpg") no-repeat;
@@ -9917,12 +9958,12 @@ p {
 /* -----------------------------------------
   happy-birthday
 ----------------------------------------- */
-/* line 476, ../scss/app.scss */
+/* line 510, ../scss/app.scss */
 #happy-birthday {
   width: 100%;
 }
 @media only screen and (max-width: 40em) {
-  /* line 476, ../scss/app.scss */
+  /* line 510, ../scss/app.scss */
   #happy-birthday {
     height: 842px;
     background: url("../img/bg/mob/panels_07.jpg") no-repeat;
@@ -9932,7 +9973,7 @@ p {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 476, ../scss/app.scss */
+  /* line 510, ../scss/app.scss */
   #happy-birthday {
     height: 904px;
     background: url("../img/bg/panels_07.jpg") no-repeat;
@@ -9945,12 +9986,12 @@ p {
 /* -----------------------------------------
   dna
 ----------------------------------------- */
-/* line 496, ../scss/app.scss */
+/* line 530, ../scss/app.scss */
 #dna {
   width: 100%;
 }
 @media only screen and (max-width: 40em) {
-  /* line 496, ../scss/app.scss */
+  /* line 530, ../scss/app.scss */
   #dna {
     height: 706px;
     background: url("../img/bg/mob/panels_08.jpg") no-repeat;
@@ -9960,7 +10001,7 @@ p {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 496, ../scss/app.scss */
+  /* line 530, ../scss/app.scss */
   #dna {
     height: 693px;
     background: url("../img/bg/panels_08.jpg") no-repeat;
@@ -9973,12 +10014,12 @@ p {
 /* -----------------------------------------
   habitat-67
 ----------------------------------------- */
-/* line 516, ../scss/app.scss */
+/* line 550, ../scss/app.scss */
 #habitat-67 {
   width: 100%;
 }
 @media only screen and (max-width: 40em) {
-  /* line 516, ../scss/app.scss */
+  /* line 550, ../scss/app.scss */
   #habitat-67 {
     height: 784px;
     background: url("../img/bg/mob/panels_09.jpg") no-repeat;
@@ -9988,7 +10029,7 @@ p {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 516, ../scss/app.scss */
+  /* line 550, ../scss/app.scss */
   #habitat-67 {
     height: 815px;
     background: url("../img/bg/panels_09.jpg") no-repeat;
@@ -10001,12 +10042,12 @@ p {
 /* -----------------------------------------
   biosphere
 ----------------------------------------- */
-/* line 536, ../scss/app.scss */
+/* line 570, ../scss/app.scss */
 #biosphere {
   width: 100%;
 }
 @media only screen and (max-width: 40em) {
-  /* line 536, ../scss/app.scss */
+  /* line 570, ../scss/app.scss */
   #biosphere {
     height: 851px;
     background: url("../img/bg/mob/panels_10.jpg") no-repeat;
@@ -10016,7 +10057,7 @@ p {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 536, ../scss/app.scss */
+  /* line 570, ../scss/app.scss */
   #biosphere {
     height: 857px;
     background: url("../img/bg/panels_10.jpg") no-repeat;
@@ -10029,12 +10070,12 @@ p {
 /* -----------------------------------------
   le-quotidien
 ----------------------------------------- */
-/* line 556, ../scss/app.scss */
+/* line 590, ../scss/app.scss */
 #le-quotidien {
   width: 100%;
 }
 @media only screen and (max-width: 40em) {
-  /* line 556, ../scss/app.scss */
+  /* line 590, ../scss/app.scss */
   #le-quotidien {
     height: 737px;
     background: url("../img/bg/mob/panels_11.jpg") no-repeat;
@@ -10044,7 +10085,7 @@ p {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 556, ../scss/app.scss */
+  /* line 590, ../scss/app.scss */
   #le-quotidien {
     height: 877px;
     background: url("../img/bg/panels_11.jpg") no-repeat;
@@ -10057,25 +10098,25 @@ p {
 /* -----------------------------------------
   footer
 ----------------------------------------- */
-/* line 576, ../scss/app.scss */
+/* line 610, ../scss/app.scss */
 #footer {
   background: #212021;
   min-height: 50px;
   padding: 20px 0;
 }
-/* line 581, ../scss/app.scss */
+/* line 615, ../scss/app.scss */
 #footer ul {
   margin-bottom: 0;
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 583, ../scss/app.scss */
+  /* line 617, ../scss/app.scss */
   #footer ul#william {
     float: none !important;
     display: inline-block !important;
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 588, ../scss/app.scss */
+  /* line 622, ../scss/app.scss */
   #footer ul#william li {
     display: block;
     float: center;
@@ -10083,14 +10124,14 @@ p {
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 594, ../scss/app.scss */
+  /* line 628, ../scss/app.scss */
   #footer ul#william li img {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 }
-/* line 601, ../scss/app.scss */
+/* line 635, ../scss/app.scss */
 #footer ul#william li:nth-child(2) {
   color: #fff;
   font-family: BrandonGrotesque-Light;
@@ -10100,30 +10141,30 @@ p {
   font-size: 0.875rem;
 }
 @media only screen and (max-width: 40em) {
-  /* line 601, ../scss/app.scss */
+  /* line 635, ../scss/app.scss */
   #footer ul#william li:nth-child(2) {
     padding: 10px 0;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 601, ../scss/app.scss */
+  /* line 635, ../scss/app.scss */
   #footer ul#william li:nth-child(2) {
     padding-top: 30px;
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 615, ../scss/app.scss */
+  /* line 649, ../scss/app.scss */
   #footer ul#william li:nth-child(3) {
     padding: 10px 0;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 615, ../scss/app.scss */
+  /* line 649, ../scss/app.scss */
   #footer ul#william li:nth-child(3) {
     padding-top: 22px;
   }
 }
-/* line 624, ../scss/app.scss */
+/* line 658, ../scss/app.scss */
 #footer ul#william li:nth-child(4) a {
   color: #9c9c9c;
   font-family: BrandonGrotesque-Light;
@@ -10132,36 +10173,36 @@ p {
   font-size: 1.25rem;
 }
 @media only screen and (max-width: 40em) {
-  /* line 624, ../scss/app.scss */
+  /* line 658, ../scss/app.scss */
   #footer ul#william li:nth-child(4) a {
     padding: 10px 0;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 624, ../scss/app.scss */
+  /* line 658, ../scss/app.scss */
   #footer ul#william li:nth-child(4) a {
     padding-top: 27px;
   }
 }
-/* line 641, ../scss/app.scss */
+/* line 675, ../scss/app.scss */
 #footer ul#made {
   padding-top: 25px;
 }
 @media only screen and (max-width: 40em) {
-  /* line 641, ../scss/app.scss */
+  /* line 675, ../scss/app.scss */
   #footer ul#made {
     float: none !important;
     display: inline-block !important;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 641, ../scss/app.scss */
+  /* line 675, ../scss/app.scss */
   #footer ul#made {
     float: none !important;
     display: inline-block !important;
   }
 }
-/* line 652, ../scss/app.scss */
+/* line 686, ../scss/app.scss */
 #footer ul#made li:nth-child(2) {
   color: #fff;
   font-family: BrandonGrotesque-Light;
@@ -10170,19 +10211,19 @@ p {
   font-size: 1.25rem;
 }
 @media only screen and (max-width: 40em) {
-  /* line 652, ../scss/app.scss */
+  /* line 686, ../scss/app.scss */
   #footer ul#made li:nth-child(2) {
     float: none !important;
     display: inline-block !important;
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 663, ../scss/app.scss */
+  /* line 697, ../scss/app.scss */
   #footer ul#made li:nth-child(3), #footer ul#made li:nth-child(4), #footer ul#made li:nth-child(5), #footer ul#made li:nth-child(6) {
     display: none !important;
   }
 }
-/* line 669, ../scss/app.scss */
+/* line 703, ../scss/app.scss */
 #footer ul#made li a img {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
   filter: alpha(opacity=50);
@@ -10190,7 +10231,7 @@ p {
   -khtml-opacity: 0.5;
   opacity: 0.5;
 }
-/* line 675, ../scss/app.scss */
+/* line 709, ../scss/app.scss */
 #footer ul#made li a img:hover {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
@@ -10198,18 +10239,18 @@ p {
   -khtml-opacity: 1;
   opacity: 1;
 }
-/* line 686, ../scss/app.scss */
+/* line 720, ../scss/app.scss */
 #footer ul#social {
   padding-top: 25px;
   float: none;
 }
 @media only screen and (max-width: 40em) {
-  /* line 686, ../scss/app.scss */
+  /* line 720, ../scss/app.scss */
   #footer ul#social {
     display: inline-block !important;
   }
 }
-/* line 695, ../scss/app.scss */
+/* line 729, ../scss/app.scss */
 #footer ul#social li a img {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
   filter: alpha(opacity=50);
@@ -10217,7 +10258,7 @@ p {
   -khtml-opacity: 0.5;
   opacity: 0.5;
 }
-/* line 701, ../scss/app.scss */
+/* line 735, ../scss/app.scss */
 #footer ul#social li a img:hover {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
