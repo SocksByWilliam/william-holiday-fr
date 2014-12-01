@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Bas pour hommes, chaussettes pour hommes, bas cool, chaussettes cool, Bas à la mode, bas pour Noël,  chaussettes pour Noël, Bas comme cadeaux, chaussettes comme cadeaux, cadeaux à moins de $20, bas de Noël , cadeau pour les hommes, cadeaux Secret Santa, cadeaux pour le copain, cadeaux pour les papas, cadeaux pour le patron, cadeaux pour les hommes d’affaires, cadeaux élégants, cadeaux fabriqué au Canada, Les Bas William, Bas William" />
+    <meta name="description" content="" />
+    <meta name="author" content="Horse & Cart Agency Inc." />
+    <meta name="copyright" content="Horse & Cart Agency Inc." />
     <title>Socks by Williams</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
     <meta name='robots' content='noindex,follow' />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
@@ -22,10 +25,21 @@
           <ul class="left">
             <li class="hide-for-small no-bg"><img src="img/special.png"></li>
             <li class="share"><span>Partagez-le !</span></li>
-            <li><a href="https://www.facebook.com/socksbywilliam"><img src="img/social/facebook.png"></a></li>
-            <li><a href="https://twitter.com/socksbywilliam"><img src="img/social/twitter.png"></a></li>
-            <li><a href="http://instagram.com/socksbywilliam/"><img src="img/social/instagram.png"></a></li>
-            <li><a href="https://www.pinterest.com/socksbywilliam/"><img src="img/social/pinterest.png"></a></li>
+            <li class="hide-for-small"><a href="https://www.facebook.com/socksbywilliam"><img class="pad" src="img/social/facebook.png"></a></li>
+            <li class="hide-for-small"><a href="https://twitter.com/socksbywilliam"><img class="pad" src="img/social/twitter.png"></a></li>
+            <li class="hide-for-small"><a href="http://instagram.com/socksbywilliam/"><img class="pad" src="img/social/instagram.png"></a></li>
+            <li class="hide-for-small"><a href="https://www.pinterest.com/socksbywilliam/"><img class="pad" src="img/social/pinterest.png"></a></li>
+             <ul class="inline-list show-for-small">
+              <li><a href="https://www.facebook.com/socksbywilliam"><img class="pad" src="img/social/facebook.png"></a></li>
+              <li><a href="https://twitter.com/socksbywilliam"><img class="pad" src="img/social/twitter.png"></a></li>
+              <li><a href="http://instagram.com/socksbywilliam/"><img class="pad" src="img/social/instagram.png"></a></li>
+              <li><a href="https://www.pinterest.com/socksbywilliam/"><img class="pad" src="img/social/pinterest.png"></a></li>
+            </ul>
+          </ul>
+          <ul class="right">
+            <li id="bag"></li>
+            <li><a href="http://www.socksbywilliam.com/cart"><span class="checkout">passer la commande</span></a></li>
+            <li><a href="http://holiday.socksbywilliam.com/">EN</a></li>
           </ul>
         </section>
       </nav>
@@ -35,12 +49,11 @@
         <div class="row">
           <div class="large-8 medium-8 small-12 columns text-center">
             <h1>Cette ann&eacute;e</h1>
-            <img class="aligncenter width-style" src="img/titles/mange-pas-tes-bas.png">
-            <img  class="aligncenter hide-for-small" src="img/logo.png">
-            <img class="aligncenter show-for-small " src="img/logo-mob.png">
+            <img class="aligncenter width-style title" src="img/titles/chaussez-vos-souhaits.png">
+            <img id="logo" class="aligncenter" src="img/logo.png">
               <ul class="inline-list show-for-small">
                 <li><img src="img/titles/canada-leaf.png"></li>
-                <li>Designed and made in Canada</li>
+                <li>Con&ccedil;u et fabriqu&eacute; au Canada</li>
               </ul>
           </div>
         </div>
@@ -54,7 +67,12 @@
           <div class="large-5 medium-5 small-12 columns text-style">
             <img class="width-style" src="img/titles/ecoutez-votre-coeur.png">
             <p>… Et &eacute;coutez-le bien ! Il aime les bonnes choses et bat &agrave; 100 à l’heure. C’est le seul que vous avez, à vous de le suivre</p>
-            <a class="button-cta heart">Achetez maintenant</a><span class="price-box">&#36;15.99</span>
+            
+            <form action="http://www.socksbywilliam.com/cart/add" method="post" >
+              <input type="hidden" name="id" value="892016015" />
+              <input name="return_to" type="hidden" value="back">
+              <input class="button-cta heart" type="submit" value="Achetez maintenant" /><span class="price-box">&#36;15.99</span>
+            </form>
           </div>
         </div>
       </div>
@@ -62,12 +80,16 @@
     <article id="in-the-maze" class="display-table">
       <div class="display-vertical"> 
         <div class="row size-row">
-          <div class="large-5 medium-5 small-12 columns text-style">
+          <div class="large-4 medium-4 small-12 columns text-style">
             <img class="width-style" src="img/titles/dans-le-labyrinthe.png">
             <p>Plusieurs chemins, mais une seule sortie. Essayez, r&eacute;fl&eacute;chissez, recommencez. Marchez sur la pointe des pieds tout en &eacute;tant rapide dans les tournants !</p>
-            <a class="button-cta maze">Achetez maintenant</a><span class="price-box">&#36;15.99</span>
+            <form action="http://www.socksbywilliam.com/cart/add" method="post" >
+              <input type="hidden" name="id" value="715158603" />
+              <input name="return_to" type="hidden" value="back">
+              <input class="button-cta maze" type="submit" value="Achetez maintenant" /><span class="price-box">&#36;15.99</span>
+            </form>
           </div>
-          <div class="large-7 medium-7 small-12 columns">
+          <div class="large-8 medium-8 small-12 columns">
           </div>
         </div>
       </div>
@@ -75,12 +97,16 @@
     <article id="paradise" class="display-table">
       <div class="display-vertical"> 
         <div class="row size-row">
-          <div class="large-7 medium-7 small-12 columns">
+          <div class="large-8 medium-8 small-12 columns">
           </div>
-          <div class="large-5 medium-5 small-12 columns text-style">
+          <div class="large-4 medium-4 small-12 columns text-style">
             <img class="width-style" src="img/titles/paradis.png">
             <p>Jetez-vous dans le bain sans arri&egrave;res pens&eacute;s. La dolce vita est tout ce dont vous r&ecirc;viez !</p>
-            <a class="button-cta paradise">Achetez maintenant</a><span class="price-box">&#36;15.99</span>
+            <form action="http://www.socksbywilliam.com/cart/add" method="post" >
+              <input type="hidden" name="id" value="892019007" />
+              <input name="return_to" type="hidden" value="back">
+              <input class="button-cta paradise" type="submit" value="Achetez maintenant" /><span class="price-box">&#36;15.99</span>
+            </form>
           </div>
         </div>
       </div>
@@ -91,7 +117,11 @@
           <div class="large-5 medium-5 small-12 columns text-style">
             <img class="width-style" src="img/titles/deux-de-pique.png">
             <p>Ne jetez jamais vos cartes quand vous pouvez continuer &agrave; jouer. Vous &ecirc;tes un joueur agit&eacute;, mais jamais &eacute;branl&eacute;.</p>
-            <a class="button-cta deuces">Achetez maintenant</a><span class="price-box">&#36;15.99</span>
+            <form action="http://www.socksbywilliam.com/cart/add" method="post" >
+              <input type="hidden" name="id" value="715159467" />
+              <input name="return_to" type="hidden" value="back">
+              <input class="button-cta deuces" type="submit" value="Achetez maintenant" /><span class="price-box">&#36;15.99</span>
+            </form>
           </div>
           <div class="large-7 medium-7 small-12 columns">
           </div>
@@ -106,7 +136,11 @@
           <div class="large-5 medium-5 small-12 columns text-style">
             <img class="width-style" src="img/titles/tour-de-france.png">
             <p>Des mont&eacute;es impossibles, des descentes dangereuses, de longues journ&eacute;es avant d’obtenir le maillot jaune. Il n’y a pas d’exploit facile...</p>
-            <a class="button-cta france">Achetez maintenant</a><span class="price-box">&#36;15.99</span>
+            <form action="http://www.socksbywilliam.com/cart/add" method="post" >
+              <input type="hidden" name="id" value="715159107" />
+              <input name="return_to" type="hidden" value="back">
+              <input class="button-cta france" type="submit" value="Achetez maintenant" /><span class="price-box">&#36;15.99</span>
+            </form>
           </div>
         </div>
       </div>
@@ -117,7 +151,11 @@
           <div class="large-5 medium-5 small-12 columns text-style">
             <img class="width-style" src="img/titles/joyeux-anniversaire.png">
             <p>Laissez vos problèmes derri&egrave;re vous et mettez-vous en tenue d’Adam. Vous &ecirc;tes tellement cool en chaussettes que vous pouvez croquer la pomme !</p>
-            <a class="button-cta birthday">Achetez maintenant</a><span class="price-box">&#36;15.99</span>
+            <form action="http://www.socksbywilliam.com/cart/add" method="post" >
+              <input type="hidden" name="id" value="891971795" />
+              <input name="return_to" type="hidden" value="back">
+              <input class="button-cta birthday" type="submit" value="Achetez maintenant" /><span class="price-box">&#36;15.99</span>
+            </form>
           </div>
           <div class="large-7 medium-7 small-12 columns">
           </div>
@@ -127,12 +165,16 @@
     <article id="dna" class="display-table">
       <div class="display-vertical"> 
         <div class="row size-row">
-          <div class="large-7 medium-7 small-12 columns">
+          <div class="large-8 medium-8 small-12 columns">
           </div>
-          <div class="large-5 medium-5 small-12 columns text-style">
+          <div class="large-4 medium-4 small-12 columns text-style">
             <img class="width-style ext" src="img/titles/adn.png">
             <p>Regardez bien vos empreintes digitales. Toute votre personne est r&eacute;unie dans ce seul et m&ecirc;me endroit. Pointez du doigt pour découvrir votre prochaine direction.</p>
-            <a class="button-cta dna">Achetez maintenant</a><span class="price-box">&#36;15.99</span>
+            <form action="http://www.socksbywilliam.com/cart/add" method="post" >
+              <input type="hidden" name="id" value="891958651" />
+              <input name="return_to" type="hidden" value="back">
+              <input class="button-cta dna" type="submit" value="Achetez maintenant" /><span class="price-box">&#36;15.99</span>
+            </form>
           </div>
         </div>
       </div>
@@ -143,7 +185,11 @@
           <div class="large-5 medium-5 small-12 columns text-style">
             <img class="width-style" src="img/titles/habitat-67.png">
             <p>Vous pouvez jeter toutes les normes que vous connaissez par les fen&ecirc;tres. Merci Moshe Safdie !</p>
-            <a class="button-cta habitat67">Achetez maintenant</a><span class="price-box">&#36;15.99</span>
+            <form action="http://www.socksbywilliam.com/cart/add" method="post" >
+              <input type="hidden" name="id" value="715162523" />
+              <input name="return_to" type="hidden" value="back">
+              <input class="button-cta habitat67" type="submit" value="Achetez maintenant" /><span class="price-box">&#36;15.99</span>
+            </form>
           </div>
           <div class="large-7 medium-7 small-12 columns">
           </div>
@@ -158,7 +204,11 @@
           <div class="large-5 medium-5 small-12 columns text-style">
             <img class="width-style" src="img/titles/biosphereFR.png">
             <p>Un monument moderne dans une ville autrefois d’influence. Parfaite dans ses rondeurs et son inutilit&eacute;. La forme l’emporte sur la fonction.</p>
-            <a class="button-cta biosphere">Achetez maintenant</a><span class="price-box">&#36;15.99</span>
+            <form action="http://www.socksbywilliam.com/cart/add" method="post" >
+              <input type="hidden" name="id" value="715159983" />
+              <input name="return_to" type="hidden" value="back">
+              <input class="button-cta biosphere" type="submit" value="Achetez maintenant" /><span class="price-box">&#36;15.99</span>
+            </form>
           </div>
         </div>
       </div>
@@ -169,7 +219,11 @@
           <div class="large-5 medium-5 small-12 columns text-style">
             <img class="width-style" src="img/titles/le-quotidien.png">
             <p>Lisez votre journal en prenant votre caf&eacute; du matin. Soyez serein de la journ&eacute;e qui s’en vient. </p>
-            <a class="button-cta quotidien">Achetez maintenant</a><span class="price-box">&#36;15.99</span>
+            <form action="http://www.socksbywilliam.com/cart/add" method="post" >
+              <input type="hidden" name="id" value="892011615" />
+              <input name="return_to" type="hidden" value="back">
+              <input class="button-cta quotidien" type="submit" value="Achetez maintenant" /><span class="price-box">&#36;15.99</span>
+            </form>
           </div>
           <div class="large-7 medium-7 small-12 columns">
           </div>
@@ -178,7 +232,7 @@
     </article>
     <article id="footer">
       <div class="row full-row ">
-        <div class="large-7 columns">
+        <div class="large-7 medium-12 columns text-center">
           <ul id="william" class="inline-list">
             <li><img src="img/titles/joyeuses-fetes-footer.png"></li>
             <li>de la part</li>
@@ -186,10 +240,16 @@
             <li><a href="www.socksbywilliam.com">www.socksbywilliam.com</a></li>
           </ul>  
         </div>
-        <div class="large-5 columns">
-          <ul id="social" class="inline-list right">
+        <div class="large-5 medium-12 columns text-center">
+          <ul id="made" class="inline-list right">
             <li><img src="img/titles/canada-leaf.png"></li>
             <li>Con&ccedil;u et fabriqu&eacute; au Canada</li>
+            <li class="hide-show-small"><a href="https://www.facebook.com/socksbywilliam"><img src="img/social/facebook.png"></a></li>
+            <li class="hide-show-small"><a href="https://twitter.com/socksbywilliam"><img src="img/social/twitter.png"></a></li>
+            <li class="hide-show-small"><a href="http://instagram.com/socksbywilliam/"><img src="img/social/instagram.png"></a></li>
+            <li class="hide-show-small"><a href="https://www.pinterest.com/socksbywilliam/"><img src="img/social/pinterest.png"></a></li>
+          </ul>
+          <ul id="social" class="inline-list show-for-small">
             <li><a href="https://www.facebook.com/socksbywilliam"><img src="img/social/facebook.png"></a></li>
             <li><a href="https://twitter.com/socksbywilliam"><img src="img/social/twitter.png"></a></li>
             <li><a href="http://instagram.com/socksbywilliam/"><img src="img/social/instagram.png"></a></li>
@@ -201,5 +261,26 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script>
+      $.ajax({
+        type: 'GET',
+        url: 'http://socksbywilliam.com/cart.json',
+        dataType: 'jsonp',
+        success: function(data) { 
+          var item_count = data['item_count'];
+          console.log(item_count);
+          //If there are items in cart
+          if(item_count > 0) {
+
+            //Display total count
+            $('#bag').append('Votre Panier: &#32; <span class="count">'+ item_count +'</span>');
+
+          } else {
+            $('#bag').append('Your Cart: &#32; <span class="count"> 0 </span>');
+          }
+
+        }
+      });
+    </script>
   </body>
 </html>
