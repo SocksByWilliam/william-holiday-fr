@@ -249,13 +249,13 @@ p {
 	z-index: 100;
 	background: #212021;
 	@media #{$medium-up} {
-    height: 54px;
+    height: 46px;
   }
 		.top-bar{
 			background: #212021;
 			max-width: 70rem;
 			@media #{$medium-up} {
-      	height: 54px;
+      	height: 46px;
     	}
     	.checkout{
 				color: #ff303b;
@@ -290,6 +290,14 @@ p {
 
 			.top-bar-section { 
 				li{
+					@media #{$medium-up} {
+				    height: 46px;
+				  }
+				  a{
+				  	@media #{$medium-up} {
+					    height: 46px;
+					  }
+				  }
 					&.share {
 						background: #212021;
 						span {
@@ -683,18 +691,35 @@ p {
 				display: inline-block !important;
 			}
 			li{
+				&:nth-child(1) {
+					img {
+						max-width: 80%;
+					}
+				}
 				&:nth-child(2){
 					color: #fff;
 					font-family: BrandonGrotesque-Light;
 					font-weight: normal;
 					font-style: normal;
 					font-size: 1.25rem;
+					margin-left: 5px;
 					@media #{$small-only} {
 						float: none !important;
 						display: inline-block !important;
+						font-size: 1rem;
 					}
 				}
-				&:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6){
+				&:nth-child(3){
+					padding-right: 3px;
+					padding-left: 3px;
+					@media #{$small-only} {
+						display: none !important;
+					}
+				}
+				&:nth-child(4), &:nth-child(5), &:nth-child(6){
+					margin-left: 0;
+					padding-right: 3px;
+					padding-left: 3px;
 					@media #{$small-only} {
 						display: none !important;
 					}
@@ -724,7 +749,15 @@ p {
 				display: inline-block !important;
 			}
 			li{
-
+				&:nth-child(1){
+					padding-right: 3px;
+					padding-left: 3px;
+				}
+				&:nth-child(2), &:nth-child(3), &:nth-child(4){
+					margin-left: 0;
+					padding-right: 3px;
+					padding-left: 3px;
+				}
 				a{
 					img {
 					  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
