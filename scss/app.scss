@@ -108,7 +108,10 @@ p {
 	color: #000 !important;
 	background: #fff;
 	@media #{$small-only} {
-		margin-top: 10px;
+		margin-top: 0px;
+	}
+	@media #{$medium-only}{
+		margin-top: 0px;
 	}
 }
 .button-cta {
